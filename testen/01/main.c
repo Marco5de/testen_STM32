@@ -36,9 +36,14 @@ int main(void) {
 		u8 readval;
 		readval = GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4);
 		
-		if(readval)
+		if(readval){
         	GPIO_SetBits(GPIOA,GPIO_Pin_0|GPIO_Pin_1);    // turn the LED on
-		else
+			//experiment with logic ananlyzer
+			//delay(20);
+		}
+		else{
 			GPIO_ResetBits(GPIOA, GPIO_Pin_0 | GPIO_Pin_1);
+			//delay(20);
+		}
     }
 }
