@@ -1,5 +1,7 @@
 #include "main.h"
 
+//Distanz prop. zur Zeit die echo Pin High ist
+
 //busy waiting
 void delay(int ms){
 	while(ms-- > 0){
