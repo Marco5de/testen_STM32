@@ -30,8 +30,7 @@ int measure(){
 	}
 	GPIO_ResetBits(GPIOA,GPIO_Pin_0);
 
-	while(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_1)){
-	}
+	while(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_1));
 	int tix = 0;	
 	while(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_1)){
 		tix++;
